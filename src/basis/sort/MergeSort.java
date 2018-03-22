@@ -1,4 +1,4 @@
-package sort;
+package basis.sort;
 
 /**
  * Created with IntelliJ IDEA.

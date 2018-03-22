@@ -1,4 +1,4 @@
-package search;
+package basis.search;
 
 /**
  * Created with IntelliJ IDEA.
