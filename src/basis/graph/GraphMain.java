@@ -17,5 +17,6 @@ public class GraphMain {
         matrixGraph.initialize(vNum, eNum);
         matrixGraph.print();
         matrixGraph.dfs(1);
+        matrixGraph.bfs(1);
     }
 }

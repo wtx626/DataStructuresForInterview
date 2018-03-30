@@ -1,5 +1,7 @@
 package basis.graph;
 
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Scanner;
 
 /**
@@ -23,7 +25,7 @@ public class MatrixGraph implements Graph {
         this.vNum = v;
         this.eNum = e;
         matrix = new int[v][v];
-        for (int i = 0; i < e; i++) {
+        for (int i = 0; i < eNum; i++) {
             int x = sc.nextInt() - 1;
             int y = sc.nextInt() - 1;
             //考虑x->y
@@ -61,7 +63,21 @@ public class MatrixGraph implements Graph {
 
     @Override
     public void bfs(int v) {
-
+        boolean[] visited = new boolean[vNum];
+        //借助队列保存访问节点
+        Queue<Integer> queue = new PriorityQueue<>();
+        visited[v - 1] = true;
+        queue.add(v - 1);
+        while (!queue.isEmpty()) {
+            int cur = queue.remove();
+            for (int i = 0; i < vNum; i++) {
+                if (isAdjacent(cur + 1, i + 1) && !visited[i]) {
+                    visited[i] = true;
+                    System.out.print(i + 1 + " ");
+                    queue.add(i);
+                }
+            }
+        }
     }
 
     @Override
