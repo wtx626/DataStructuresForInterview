@@ -1,7 +1,6 @@
 package codeinterview.code34;
 
 import codeinterview.common.TreeNode;
-import com.sun.xml.internal.fastinfoset.tools.FI_DOM_Or_XML_DOM_SAX_SAXEvent;
 
 import java.util.ArrayList;
 
