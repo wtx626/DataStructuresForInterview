@@ -1,6 +1,9 @@
 package codeinterview.code53;
 
-import java.util.Arrays;
+/**
+ * 题目描述
+ * 统计一个数字在排序数组中出现的次数。
+ */
 
 public class GetNumberOfK {
 

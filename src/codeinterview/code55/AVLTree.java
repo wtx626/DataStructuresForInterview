@@ -2,6 +2,10 @@ package codeinterview.code55;
 
 import codeinterview.common.TreeNode;
 
+/**
+ * 题目描述
+ * 输入一棵二叉树，判断该二叉树是否是平衡二叉树。
+ */
 public class AVLTree {
     public boolean IsBalanced_Solution(TreeNode root) {
         if (root == null) return true;

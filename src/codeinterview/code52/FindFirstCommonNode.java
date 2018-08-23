@@ -2,6 +2,10 @@ package codeinterview.code52;
 
 import codeinterview.common.ListNode;
 
+/**
+ * 题目描述
+ * 输入两个链表，找出它们的第一个公共结点。
+ */
 
 public class FindFirstCommonNode {
 
@@ -29,15 +33,15 @@ public class FindFirstCommonNode {
             p2 = tmpNode;
         }
         int dif = length1 - length2;
-        int count=0;
-        while (count<dif){
-            p1=p1.next;
+        int count = 0;
+        while (count < dif) {
+            p1 = p1.next;
             count++;
         }
 
-        while (p1!=null&&p2!=null&&p1!=p2){
-            p1=p1.next;
-            p2=p2.next;
+        while (p1 != null && p2 != null && p1 != p2) {
+            p1 = p1.next;
+            p2 = p2.next;
         }
         return p1;
     }
