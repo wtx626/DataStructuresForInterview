@@ -171,7 +171,7 @@ public class Main {
         xiaoming.setY(Integer.valueOf(str[1]));
         List<Point> hema = new ArrayList<>();
         String[] hemaStr = sc.nextLine().split(",");
-        for (int i = 0; i < hemaStr.length / 2; i++) {
+        for (int i = 0; i < hemaStr.length; i = i + 2) {
             Point tmp = new Point();
             tmp.setX(Integer.valueOf(hemaStr[i]));
             tmp.setY(Integer.valueOf(hemaStr[i + 1]));
